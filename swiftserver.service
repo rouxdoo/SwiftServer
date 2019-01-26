@@ -1,0 +1,10 @@
+[Unit]
+Description=Listen for Control Elements
+After=multi-user.target
+
+[Service]
+ExecStart=/home/pi/SwiftServer/.build/release/SwiftServer
+
+[Install]
+WantedBy=multi-user.target
+
