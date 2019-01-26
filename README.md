@@ -1,3 +1,4 @@
 # SwiftServer
 
-A description of this package.
+This is a small, lightweight server written in SWIFT
+
