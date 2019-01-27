@@ -3,6 +3,8 @@ Description=Listen for Control Elements
 After=multi-user.target
 
 [Service]
+User=pi
+WorkingDirectory=/home/pi
 ExecStart=/home/pi/SwiftServer/.build/release/SwiftServer
 
 [Install]
