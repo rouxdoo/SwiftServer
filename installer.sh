@@ -20,8 +20,8 @@ swift package update
 swift build -c release
 echo SUBSYSTEM==\"leds\",RUN+=\"/bin/chmod 666 /sys/class/leds/%k/brightness\" | sudo tee /etc/udev/rules.d/leds-permissions.rules
 sudo udevadm control --reload-rules && udevadm trigger
-nohup ./.build/release/SwiftServer > /dev/null&
 sudo cp ./swiftserver.service /lib/systemd/system/
 sudo chown root:root /lib/systemd/system/swiftserver.service
 sudo systemctl daemon-reload
-sudo systemctl enable swiftserver.service
+sudo systemctl enable swiftserver
+sudo systemctl start swiftserver
