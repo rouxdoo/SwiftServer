@@ -15,8 +15,8 @@ my iOS utility called piDisplay:
 https://itunes.apple.com/us/app/pidisplay/id1448654670?mt=8
 
 The included installer.sh will download several components:
-*rpi-backlight
-*Swift language: swift-4.1.1|RELEASE
+* rpi-backlight
+* Swift language: swift-4.1.1-RELEASE
 
 The installer will install above on your pi then proceed to
 build SwiftServer. Finally, it wil install a systemd profile
