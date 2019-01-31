@@ -5,6 +5,7 @@ After=multi-user.target
 [Service]
 User=pi
 WorkingDirectory=/home/pi
+Restart=always
 ExecStart=/home/pi/SwiftServer/.build/release/SwiftServer
 
 [Install]
