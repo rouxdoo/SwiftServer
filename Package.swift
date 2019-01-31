@@ -9,7 +9,8 @@ let package = Package(
         // Dependencies declare other packages that this package depends on.
         .package(url: "https://github.com/getGuaka/FileUtils.git", .branch("master")),
         .package(url: "https://github.com/uraimo/SwiftyGPIO.git", from: "1.0.0"),
-        .package(url: "https://github.com/robreuss/ElementalController.git", .branch("master")),
+//        .package(url: "https://github.com/robreuss/ElementalController.git", .branch("master")),
+        .package(url: "https://github.com/robreuss/ElementalController.git", .exact("0.0.106")),
         ],
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
